@@ -2,6 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
+/* 테일윈드 기본단위가 rem이므로 모바일 브라우저 접근성 설정에 의한 레이아웃 변경 방지 */
+html {
+  font-size: 16px;
+}
+
 input[type='number'] {
   -moz-appearance: textfield;
   appearance: textfield;
